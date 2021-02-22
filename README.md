@@ -5,7 +5,7 @@ Below template created two VMs with two networks,attached storage with security 
 resource "openstack_compute_secgroup_v2" "secgroup_hms" {
   name        = "hms_secgroup"
   description = "hms grp"
-
+``` 
   rule {
     from_port   = 22
     to_port     = 22
