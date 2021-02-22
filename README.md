@@ -1,7 +1,7 @@
 #  Terraform RnD
 sample template for VNF provisioning.
 Below template created two VMs with two networks,attached storage with security group 
-
+```
 resource "openstack_compute_secgroup_v2" "secgroup_hms" {
   name        = "hms_secgroup"
   description = "hms grp"
@@ -93,4 +93,4 @@ resource "openstack_compute_volume_attach_v2" "attached2" {
   volume_id   = "${openstack_blockstorage_volume_v2.myvol2.id}"
 }
 
-
+```
